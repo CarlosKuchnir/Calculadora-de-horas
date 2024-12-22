@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #166497, #190f9b);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 400px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid black;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+    margin-left: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-weight: bold;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: black;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.45);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: #0093E9;
+    color: #0093E9;
+    text-shadow: 0 0 2px rgba(0, 147, 233, 0.3);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

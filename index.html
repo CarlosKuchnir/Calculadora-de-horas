@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Trabalhadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="container">
+            <h2>Calculadora de Horas Trabalhadas</h2>
+            
+            <div class="input-group">
+                <label>Entrada:</label>
+                <input type="text" id="entrada-hora" placeholder="Hora" maxlength="2" style="width: 70px">
+                <input type="text" id="entrada-minuto" placeholder="Minuto" maxlength="2" style="width: 70px">
+            </div>
+
+            <div class="input-group">
+                <label>Saída:</label>
+                <input type="text" id="saida-hora" placeholder="Hora" maxlength="2" style="width: 70px">
+                <input type="text" id="saida-minuto" placeholder="Minuto" maxlength="2" style="width: 70px">
+            </div>
+
+            <div class="button-group">
+                <button onclick="calcularHoras()">Calcular</button>
+                <button onclick="subtrairHoras()">Subtrair</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
